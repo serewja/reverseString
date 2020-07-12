@@ -1,5 +1,7 @@
-import f from "../dist/index.js"
+import reverse from "../dist/index.js"
 
-test('testname', () => {
-    
+test('test', () => {
+  expect(reverse('hello, world!')).toBe('!dlrow ,olleh');
+  expect(reverse('')).toBe('');
+  expect(reverse('h')).toBe('h');
 });
